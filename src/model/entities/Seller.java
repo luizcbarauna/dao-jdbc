@@ -8,7 +8,7 @@ public class Seller implements Serializable {
     private Integer id;
     private String name;
     private String email;
-    private Date bithDate;
+    private Date birthDate;
     private Double baseSalary;
     private Department department;
 
@@ -19,7 +19,7 @@ public class Seller implements Serializable {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.bithDate = bithDate;
+        this.birthDate = bithDate;
         this.baseSalary = baseSalary;
         this.department = department;
     }
@@ -48,12 +48,12 @@ public class Seller implements Serializable {
         this.email = email;
     }
 
-    public Date getBithDate(java.sql.Date birthDate) {
-        return bithDate;
+    public Date getBirthDate() {
+        return this.birthDate;
     }
 
-    public void setBithDate(Date bithDate) {
-        this.bithDate = bithDate;
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Double getBaseSalary() {
@@ -90,7 +90,7 @@ public class Seller implements Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", bithDate=" + bithDate +
+                ", bithDate=" + birthDate +
                 ", baseSalary=" + baseSalary +
                 ", department=" + department +
                 '}';
